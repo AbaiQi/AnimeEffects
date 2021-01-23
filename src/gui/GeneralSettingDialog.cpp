@@ -8,13 +8,14 @@
 namespace
 {
 
-static const int kLanguageTypeCount = 3;
+static const int kLanguageTypeCount = 4;
 
 int languageToIndex(const QString& aLanguage)
 {
     if (aLanguage == "Auto") return 0;
     else if (aLanguage == "English") return 1;
     else if (aLanguage == "Japanese") return 2;
+    else if (aLanguage == "SChinese") return 3;
     else return 0;
 }
 
@@ -25,6 +26,7 @@ QString indexToLanguage(int aIndex)
     case 0: return "Auto";
     case 1: return "English";
     case 2: return "Japanese";
+    case 3: return "SChinese";
     default: return "";
     }
 }

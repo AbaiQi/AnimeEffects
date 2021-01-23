@@ -25,12 +25,20 @@ LocaleDecider::LocaleDecider()
         {
             locAbb = "ja";
         }
+        else if (language == "SChinese")
+        {
+            locAbb = "zh_CN";
+        }
         else
         {
             auto language = QLocale::system().language();
             if (language == QLocale::Japanese)
             {
                 locAbb = "ja";
+            }
+            else if (language == QLocale::Chinese)
+            {
+                locAbb = "zh_CN";
             }
         }
     }
