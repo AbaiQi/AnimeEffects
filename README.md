@@ -34,14 +34,23 @@ http://animeeffects.org/en/
      MSVC2015 / MinGW / GCC / Clang（32位或64位）
 
 linux下编译
+
 ubuntu20.04下示范,系统默认Qt5.12.8
+
 安装依赖库
+
 sudo apt install qtcreator(qtcreator是Qt官方的集成开发环境包)
+
 下载源码
+
 git clone https://github.com/AbaiQi/AnimeEffects.git
+
 编译
+
 cd /AnimeEffects
+
 qmake
+
 make
 
 
